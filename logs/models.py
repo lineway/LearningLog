@@ -10,6 +10,9 @@ class Topic(models.Model):
     text = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        verbose_name_plural = u'主题'
+
     def __unicode__(self):
         '''
         返回模型的字符串表示
